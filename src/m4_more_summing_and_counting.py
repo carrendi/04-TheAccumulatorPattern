@@ -170,6 +170,24 @@ def run_test_factorial():
     #   ** uses  math.factorial  as an ORACLE for testing. **
     # -------------------------------------------------------------------------
 
+    #TEST3:
+    answer_from_oracle = math.factorial(10)
+    answer_from_my_code = factorial(10)
+    print('Test 3 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
+    #Test 4
+    answer_from_oracle = math.factorial(9)
+    answer_from_my_code = factorial(9)
+    print('Test 4 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
+    #Test5:
+    answer_from_oracle = math.factorial(7)
+    answer_from_my_code = factorial(7)
+    print('Test 2 expected (from oracle):', answer_from_oracle)
+    print('       actual (from my code): ', answer_from_my_code)
+
 
 def factorial(n):
     total = 1
@@ -325,6 +343,12 @@ def run_test_sum_unit_fractions_from():
     expected = 0.545635  # This is APPROXIMATELY the correct answer.
     answer = sum_unit_fractions_from(6, 9)
     print('Test 1 expected:', expected, '(approximately)')
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 6.853
+    answer = sum_unit_fractions_from(10, 9000)
+    print('Test 2expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
